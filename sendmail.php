@@ -21,6 +21,7 @@ $body = '<h1>Встречайте супер письмо!</h1>'
 
 
 $body.='<p>Имя: '.$_POST['name']. '</p>'
+$body.='<p>Имя: '.$_POST['email']. '</p>'
 
 $mail->Body = $body;
 
