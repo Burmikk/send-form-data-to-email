@@ -6,22 +6,22 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
-$mail - >CharSet = 'UTF-8';
-$mail ->IsHTML(true);
+// $mail ->CharSet = 'UTF-8';
+$mail->IsHTML(true);
 
 //От кого письмо
-$mail ->setFrom('byrmik@gmail.com', 'Отправка Формы')
+$mail->setFrom('byrmik@gmail.com', 'Отправка Формы')
 //Кому отпраиивть
-$mail -> addAddress('byrmik@gmail.com')
+$mail-> addAddress('byrmik@gmail.com')
 //Тема письма
-$mail->Subject = 'Привет! Это данные формы'
+$mail->Subject='Привет! Это данные формы'
 
 // Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>'
 
 
-$body.='<p>Имя: '.$_POST['name']. '</p>'
-$body.='<p>Имя: '.$_POST['email']. '</p>'
+// $body.='<p>Имя: '.$_POST['name']. '</p>'
+// $body.='<p>Имя: '.$_POST['email']. '</p>'
 
 $mail->Body = $body;
 
