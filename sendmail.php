@@ -6,7 +6,7 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
-$mail ->CharSet = 'UTF-8';
+$mail - >CharSet = 'UTF-8';
 $mail ->IsHTML(true);
 
 //От кого письмо

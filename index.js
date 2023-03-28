@@ -17,6 +17,6 @@ async function formSend(e) {
     alert(result.message);
     form.reset();
   } else {
-    alert("Ошибка");
+    // alert("Ошибка");
   }
 }
